@@ -1,0 +1,187 @@
+# If you come from bash you might have to change your $PATH.
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+  export ZSH="/home/bigbug4/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="random"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+ZSH_THEME_RANDOM_CANDIDATES=("Soliah" "af-magic" "afowler" "agnoster" "alanpeabody"
+"amuse" "apple" "arrow" "aussiegeek" "avit" "awesomepanda" "bira"
+"blinks" "bureau" "candy" "clean" "cloud" "crunch" "cypher" "dallas" "d$
+"essembeh" "evan" "fino" "fino-time" "flazz" "fletcherm" "fox"
+"frisk" "frontcube" "funky" "fwalch" "gallifrey" "gallois" "garyblessington"
+"gentoo" "geoffgarside" "gianu" "gnzh" "gozilla" "half-life" "humza"
+"imajes" "intheloop" "jaischeema" "jbergantine" "jispwoso"
+"jnrowe" "josh" "jreese" "jtriley" "juanghurtado"
+"junkfood" "kafeitu" "kennethreitz" "kiwi" "kolo" "kphoen"
+"lambda" "lukerandall" "macovsky" "macovsky-ruby" "maran"
+"mgutz" "mh" "michelebologna" "mikeh" "miloshadzic" "minimal" "mira"
+"mortalscumbag" "mrtazz" "murilasso" "muse" "nanotech" "nebirhos"
+"nicoulaj" "norm" "obraun" "peepcode" "philips" "pmcgee" "re5et" "refined" "rgm" "risto$
+"rkj-repos" "robbyrussell" "sammy" "simonoff" "simple" "skaro" "smt"
+"sonicradish" "sorin" "sporty_256" "steeef" "strug" "sunaku" "sunrise"
+"superjarin" "suvash" "takashiyoshida" "terminalparty" "theunraveler"
+"tjkirch" "tjkirch_mod" "tonotdo" "trapd00r" "wedisagree" "wezm"
+"wezm+" "wuffers" "ys" "zhann")
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git themes emoji emoji-clock copyfile copydir dircycle extract
+ubuntu urltools jump textmate lighthouse zsh_reload wd sudo)
+
+source $ZSH/oh-my-zsh.sh
+# User configuration
+
+export EDITOR=nano
+source $ZSH/plugins/incr/incr*.zsh
+
+# my custom windows
+sleep 0.5; clear; sl -leaF; clear
+sleep 0.5; echo
+toilet -f term -F border --gay "let's the nice day begin..." | pv -qL 600
+echo
+echo ------------------------------------------------- | toilet -f term --gay | pv -qL 600
+sleep 0.3; date +'%Y-%m-%d %H:%M:%S' | toilet -f term --metal; sleep 0.2;echo
+echo `toilet -f term --gay Daily sentence...`
+sleep 0.5; echo
+echo `fortune | toilet -f term --metal` | cowsay -f duck
+echo
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+#source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+alias simone='ssh simone@202.115.22.242'
+alias phone='ssh u0_a233@192.168.1.110 -p 8022'
+alias cp2dt='~/dcl/my-sh/cp2dt.sh'
+alias mytree='~/dcl/my-sh/tree.sh'
+alias dl='~/dcl/my-sh/wget-url.sh'
+alias dls='~/dcl/my-sh/wget-file.sh'
+alias ds='du -sh * | sort -nr | head'
+alias quo='~/dcl/my-sh/quo-add.sh'
+alias br='~/dcl/my-sh/br-del.sh'
+alias ftp='~/dcl/my-sh/http.sh'
+alias htp='~/dcl/my-sh/url.sh'
+alias mytree='~/DCL/my-sh/tree.sh'
+alias dl='~/dcl/my-sh/wget-url.sh'
+alias dls='~/dcl/my-sh/wget-file.sh'
+alias ds='du -sh * | sort -nr | head'
+alias quo='~/dcl/my-sh/quo-add.sh'
+alias br='~/dcl/my-sh/br-del.sh'
+alias ftp='~/dcl/my-sh/http.sh'
+alias htp='~/dcl/my-sh/url.sh'
+alias al='sudo apt list'
+alias ali='~/dcl/my-sh/alias-add.sh'
+alias plugin='cd $ZSH/plugins'
+alias ~='cd ~'
+alias ..='cd ..'
+alias vrc='vim ~/.zshrc'
+alias lrc='less ~/.zshrc'
+alias nrc='nano ~/.zshrc'
+alias grc='gedit ~/.zshrc'
+alias jp='jump'
+alias amuse='theme amuse'
+alias fox='theme fox'
+alias js='theme josh'
+alias simi='theme simonoff'
+alias s2n='~/dcl/my-sh/sum2n.sh'
+alias aud='sudo apt update'
+alias aug='sudo apt upgrade'
+alias ai='sudo apt install'
+alias ar='sudo apt remove'
+alias ap='sudo apt purge'
+alias as='sudo apt show'
+alias clc='sudo apt-get autoclean'
+alias clr='sudo apt-get autoremove'
+alias cls='clear'
+alias afug='sudo apt full-upgrade'
+alias rw='nano'
+alias lr='less'
+alias la='ls -a'
+alias q='exit'
+alias p='sudo /usr/sbin/sshd'
+alias zh='LANG=zh_CN.UTF-8'
+alias rn='/data/data/com.termux/files/home/my-sh/rename.sh'
+alias simd='~/dcl/my-sh/scp-simone-download.sh'
+alias simu='~/dcl/my-sh/scp-simone-upload.sh'
+alias phd='~/dcl/my-sh/scp-phone-download.sh'
+alias phu='~/dcl/my-sh/scp-phone-upload.sh'
+alias plfs='~/dcl/my-sh/show-match.sh'
+alias tg='toilet -f term --gay'
+alias tm='toilet -f term --metal'
+alias type='pv -qL 60 $1'
+
+alias mysqld='sudo /usr/sbin/mysqld'
