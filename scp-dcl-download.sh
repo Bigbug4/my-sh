@@ -1,9 +1,9 @@
 #!/bin/bash
 echo ---------------------------------
-echo aim: download files from simone.
+echo aim: download files from dvl
 
 if [ $# -lt 2 ];then
-   echo "Usage: simd file dir (-r)"
+   echo "Usage: dcld file dir (-r)"
 exit
 fi
 
@@ -11,7 +11,6 @@ echo
 echo program start...
 echo
 
-scp $3 Adminstrator@192.168.1.111:$1 $2
-
+scp $3 dcl@211.83.111.36:$1 $2
 echo
 echo download finished.
